@@ -1,0 +1,22 @@
+b {
+    font-size: 5%;
+    font-family: Arial;
+    text-indent: 50px;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right:20%;
+}
+p {
+    display: block;
+    margin-block-start: 6px;
+    margin-block-end: 10px;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+}
+img {
+    width:30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

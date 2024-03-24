@@ -1,0 +1,340 @@
+<html>
+    <head>
+        <title>SKINCARE</title>
+        <style>
+        h1{
+            margin-top: 3%;
+            color:darkgreen;
+            text-align: center;
+            padding: 15px;
+        }
+        nav ul{
+            text-align: center;
+        }
+        nav ul li{
+            display:inline;
+            padding:10px;
+            color:rgb(36, 107, 68);
+            font-size: 18px;
+        }
+        nav ul li a{
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            font-size: 20px;
+            color:rgb(130, 33, 33);
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: brown;
+        }
+        nav ul li a{
+            color:rgb(10, 112, 15);
+            text-decoration: none;
+            padding:5px;
+        }
+        .banner{
+            height:65%;
+            display:block;
+            padding-right: 60px;
+
+        }
+        .banner-conten{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        .product{
+            list-style: none;
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        img{
+            width:100%;
+            height: 80%;
+            padding: 35px;
+        }
+        .product img{
+            flex-basis: 25%;
+            padding-left: 22px;
+            padding-right: 22px;
+            box-sizing: border-box;
+        }
+        menu a{
+            text-align: center;
+        }
+        span a{
+            text-decoration: none;
+        }
+        span a{
+            color:rgb(121, 37, 37);
+            font-size: 15px;
+            font-family: Arial;
+        }
+        .menu span {
+            display: block;
+            text-align: center; 
+            margin: 0 5px; 
+        }
+        .menu span {
+            display: block;
+            text-align: center;
+        }
+
+        .menu span b,
+        .menu span a {
+            display: block;
+        }
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #purchase-form input[type="text"],
+        #purchase-form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #purchase-form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        #purchase-form button:hover {
+            background-color: #45a049;
+        }
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #purchase-form input[type="text"],
+        #purchase-form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #purchase-form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        #purchase-form button:hover {
+            background-color: #45a049;
+        }
+        a.mua {
+            text-decoration: none;
+            border: 2px solid rgb(109, 109, 139);
+            border-radius: 20px;
+            background: white;
+            color: rgb(69, 15, 120);
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        a.mua:hover {
+            background: rgb(237, 44, 30);
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>CHĂM SÓC DA MẶT</h1>
+        <nav>
+            <ul>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="spm.html">Sản phẩm mới</a></li>
+                <li><a href="giamgia.html">Giảm giá</a></li>
+                <li><a href="csdm.html">Chăm sóc da mặt</a></li>
+                <li><a href="make.html">Makeup</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+            </ul>
+        </nav> 
+        <section class="banner">
+            <div class="banner-content">
+                <img src="img\Skin.png">
+            </div>
+        </section>
+        <div class="product">
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1823/6e9e84e4-859b-4b51-a7c0-3273b0f08617.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct17.html">Toner LA ROSEE Moisturizing Tonic 200mL</a>
+                    <b>290.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1886/e486bfb4-1f1a-4402-b683-c8f948d8469c.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\ct5.html">Xịt khoáng d'Alba White Truffle First 100mL</a>
+                    <b>455.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1983/177af0da-ba0e-4f27-b18b-b3c2a2466812.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct18.html">Serum Dermatory Hyal Shot Barrier Ampoule B5 50mL</a>
+                    <b>230.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1633/e75d3594-13e7-4db8-9af7-ee8c5508771e.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct19.html">Serum BRINGGREEN Zinc Teca Trouble Serum Limited</a>
+                    <b>320.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1913/ed9a36ab-b473-450d-89b4-fffe1acc2a45.jpg?RS=810x810&AR=0">
+                <span>
+                   <a href="trangchitiet\ct1.html">Bộ 3 Serum Goodal Green Tangerine Vita-C D 30mL</a>
+                   <b>699.000 VNĐ</b>
+                   <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1688/a610a4a9-9d86-42bc-b7ac-0187d8ad1b94.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct20.html">JUMISO Snail Mucin 95 + Peptide Facial 140mL</a>
+                    <b>275.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1892/290a7a4c-0ed2-4bcb-9c19-e3bb642ecf41.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct21.html">Kem dưỡng SUNGBOON EDITOR Meoru Podo Vita C 50mL</a>
+                    <b>340.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1277/1a7556d9-55b2-49c3-adfd-781baacc9252.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct22.html">Dầu tẩy trang THE FACE SHOP Rice Water Bright Light 150mL</a>
+                    <b>250.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="purchase-form">
+                    <h3>Nhập thông tin</h3>
+                    <label for="ten">Họ và tên:</label>
+                    <input type="text" id="ten" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="diachi">Địa chỉ:</label>
+                    <input type="text" id="diachi" name="address"><br><br>
+                    <button id="submit-btn" onclick="return submitForm()">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showPurchaseForm() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            }
+            function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+            }
+            function submitForm() {
+            var name = document.getElementById("ten").value;
+            var email = document.getElementById("email").value;
+            var address = document.getElementById("diachi").value;
+            console.log("Tên: " + name + ", Email: " + email + ", Địa chỉ: " + address);
+            alert("Đơn hàng đã được đặt thành công! Cảm ơn bạn " + name + " đã mua hàng từ OLIVE YOUNG!");
+            closeModal();
+            return false;
+             }
+        </script>
+    </body>
+</html>

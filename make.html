@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>Giảm giá</title>
+        <style>
+        h1{
+            margin-top: 3%;
+            color:darkgreen;
+            text-align: center;
+            padding: 15px;
+        }
+        nav ul{
+            text-align: center;
+        }
+        nav ul li{
+            display:inline;
+            padding:10px;
+            color:rgb(36, 107, 68);
+            font-size: 18px;
+        }
+        nav ul li a{
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            font-size: 20px;
+            color:rgb(130, 33, 33);
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: brown;
+        }
+        nav ul li a{
+            color:rgb(16, 122, 34);
+            text-decoration: none;
+            padding:3px;
+
+        }
+        .banner{
+            height:65%;
+            display:block;
+            padding-bottom: 70px;
+            padding-right: 60px;
+            
+        }
+        .banner-conten{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        .product{
+            list-style: none;
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+        }    
+        img{
+            width:100%;
+            height: 80%;
+            padding: 35px;
+        }
+        .product img{
+            flex-basis: 25%;
+            padding-left: 22px;
+            padding-right: 22px;
+            box-sizing: border-box;
+        }
+        menu a{
+            text-align: center;
+        }
+        span a{
+            text-decoration: none;
+        }
+        span a{
+            color:rgb(121, 37, 37);
+            font-size: 15px;
+            font-family: Arial;
+            text-decoration: none;
+        }
+        .menu span {
+            display: block;
+            text-align: center; 
+            margin: 0 5px; 
+        }
+        .menu span {
+            display: block;
+            text-align: center;
+        }
+
+        .menu span b,
+        .menu span a {
+            display: block;
+        }
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #purchase-form input[type="text"],
+        #purchase-form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #purchase-form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        #purchase-form button:hover {
+            background-color: #45a049;
+        }
+        a.mua {
+            text-decoration: none;
+            border: 2px solid rgb(109, 109, 139);
+            border-radius: 20px;
+            background: white;
+            color: rgb(69, 15, 120);
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        a.mua:hover {
+            background: rgb(237, 44, 30);
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>SẢN PHẨM MAKEUP</h1>
+        <nav>
+            <ul>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="spm.html">Sản phẩm mới</a></li>
+                <li><a href="giamgia.html">Giảm giá</a></li>
+                <li><a href="csdm.html">Chăm sóc da mặt</a></li>
+                <li><a href="make.html">Makeup</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <div class="banner-content">
+                <img src="img\makeup.png">
+            </div>
+        </section>
+        <div class="product">
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1855/ca2ef4d9-c671-4820-93fb-4e3615c220cf.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct23.html">Son Heart Percent Dot On Mood Blurry Fog 6g</a>
+                    <b>375.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1996/d756f5cf-f7ef-4114-b0a2-678eb5f2e8d9.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct24.html">Chì kẻ mắt Kiss me Heroine Make Long Stay Smooth</a>
+                    <b>159.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1999/c4c65d8c-ce2f-4a9c-8582-6b2854a93b4f.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct25.html">Sịt khóa makeup espoir Fresh 100ml</a>
+                    <b>269.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1259/451781e0-f6a9-457b-974b-5622f5cbb5f3.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct26.html">Phấn mắt 2aN pink Better Me 4.5g</a>
+                    <b>321.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1970/347a489c-9072-4e40-9ef0-1fbed157926c.jpg?RS=810x810&AR=0">
+                <span>
+                   <a href="trangchitiet\xct5.html">Bút kẻ mắt Meymonde Super Twim Pen 0.5g</a>
+                   <b>119.000 VNĐ</b>
+                   <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1308/85a87156-7fe5-40d3-a748-e746d6a589a9.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct29.html">Bút kẻ mắt Kiss me Heroine Make Under Eye Dual</a>
+                    <b>460.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1676/a76bf745-b002-4d3c-aae3-01213fe112d8.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct27.html">too cool for school Fixing Dew Cushion</a>
+                    <b>239.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+            <div class="menu">
+                <img src="https://image.globaloliveyoungshop.com/prdtImg/1474/13d78899-8851-419e-acac-55452f3c39fb.jpg?RS=810x810&AR=0">
+                <span>
+                    <a href="trangchitiet\xct28.html">Doing What Soft Blurring Filter Cushion 15g</a>
+                    <b>410.000 VNĐ</b>
+                    <a class="mua" href="dangnhap.html"  onclick="showPurchaseForm()">Mua ngay</a>
+                </span>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="purchase-form">
+                    <h3>Nhập thông tin</h3>
+                    <label for="ten">Họ và tên:</label>
+                    <input type="text" id="ten" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="diachi">Địa chỉ:</label>
+                    <input type="text" id="diachi" name="address"><br><br>
+                    <button id="submit-btn" onclick="return submitForm()">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showPurchaseForm() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            }
+            function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+            }
+            function submitForm() {
+            var name = document.getElementById("ten").value;
+            var email = document.getElementById("email").value;
+            var address = document.getElementById("diachi").value;
+            console.log("Tên: " + name + ", Email: " + email + ", Địa chỉ: " + address);
+            alert("Đơn hàng đã được đặt thành công! Cảm ơn bạn " + name + " đã mua hàng từ OLIVE YOUNG!");
+            closeModal();
+            return false;
+             }
+        </script>
+    </body>
+</html>
